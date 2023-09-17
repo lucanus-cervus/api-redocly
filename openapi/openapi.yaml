@@ -53,18 +53,12 @@ servers:
   #       description: Your tenant id
   - url: https://www.kipful.com/wp-json
 paths:
-  /users/{username}:
-    $ref: paths/users_{username}.yaml
   /api-bearer-auth/v1/login:
     $ref: paths/authentication.yaml
-  /api/v1/user:
-    $ref: paths/user.yaml
   /api/v1/users:
     $ref: paths/users.yaml
-  /pathItem:
-    $ref: paths/pathItem.yaml
-  /pathItemWithExamples:
-    $ref: paths/pathItemWithExamples.yaml
+  /api/v1/user:
+    $ref: paths/user.yaml
 components:
   securitySchemes:
     main_auth:
