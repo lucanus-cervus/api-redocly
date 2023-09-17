@@ -57,6 +57,8 @@ paths:
     $ref: paths/users_{username}.yaml
   /api-bearer-auth/v1/login:
     $ref: paths/authentication.yaml
+  /api/v1/user:
+    $ref: paths/getuser.yaml
   /pathItem:
     $ref: paths/pathItem.yaml
   /pathItemWithExamples:
