@@ -4,9 +4,6 @@ post:
   summary: Obtenir un jeton d'accès (access token)
   description: Routes d'authentification permettant la génération d'un jeton d'accès pour effectuer les autres opérations.
   operationId: authentication
-  security:
-    - api_key: []
-    - basic_auth: []
   responses:
     '200':
       description: OK
@@ -37,13 +34,8 @@ post:
     content:
       application/json:
         schema:
-          type: string
-          example: Hello world!
-      application/xml:
-        schema:
-          type: string
-          example: Hello world!
-    description: Echo payload
+          $ref: ../components/schemas/Authentication.yaml
+    description: Authentification à partir des données de connexion du profil manager.
     required: true
   x-codeSamples:
     - lang: C#

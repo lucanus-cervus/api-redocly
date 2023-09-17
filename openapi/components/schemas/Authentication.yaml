@@ -1,0 +1,10 @@
+type: object
+properties:
+  username:
+    description: Nom d'utilisateur ou email du profil manager
+    type: string
+    example: Kipful-Mana
+  password:
+    description: Mot de passe du profil manager
+    type: string
+    example: _tR2jNi482Nc:;
