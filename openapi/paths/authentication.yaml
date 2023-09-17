@@ -56,8 +56,7 @@ post:
                     items:
                       type: string
                     examples:
-                      - username
-                      - password  
+                      - ['username', 'password']
   requestBody:
     content:
       application/json:
