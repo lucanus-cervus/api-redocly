@@ -39,7 +39,7 @@ info:
     interfaces have done for lower-level programming, OpenAPI removes the
     guesswork in calling the service.
 tags:
-  - name: Securité
+  - name: Authentification
     description: Routes d'authentification.
   - name: Utilisateurs
     description: Opérations autour des utilisateurs.
@@ -55,8 +55,8 @@ servers:
 paths:
   /users/{username}:
     $ref: paths/users_{username}.yaml
-  /security:
-    $ref: paths/security.yaml
+  /authentication:
+    $ref: paths/authentication.yaml
   /pathItem:
     $ref: paths/pathItem.yaml
   /pathItemWithExamples:
