@@ -46,11 +46,11 @@ tags:
   - name: Tag
     description: This is a tag description.
 servers:
-  - url: https://www.kipful.com/wp-json # {tenant}
-    variables:
-      tenant:
-        default: www
-        description: Your tenant id
+  # - url: https://www.kipful.com/wp-json # {tenant}
+  #   variables:
+  #     tenant:
+  #       default: www
+  #       description: Your tenant id
   - url: https://www.kipful.com/wp-json
 paths:
   /users/{username}:
@@ -78,3 +78,7 @@ components:
     basic_auth:
       type: http
       scheme: basic
+    bearerAuth:
+        type: http
+        scheme: bearer
+        bearerFormat: JWT

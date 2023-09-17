@@ -5,6 +5,7 @@ get:
   description: Route permettant de visualiser les données relatives à un utilisateur rattaché au profil manager.
   operationId: users
   security: 
+    - bearerAuth: []
   responses:
     '200':
       description: OK
