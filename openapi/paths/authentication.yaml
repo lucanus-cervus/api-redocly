@@ -51,6 +51,13 @@ post:
                     type: integer
                     examples:
                       - 400
+                  params:
+                    type: array
+                    items:
+                      type: string
+                    examples:
+                      - username
+                      - password  
   requestBody:
     content:
       application/json:
