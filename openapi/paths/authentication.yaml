@@ -31,6 +31,26 @@ post:
             type: string
     '400':
       description: Unauthorized
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              code:
+                type: string
+                examples:
+                  - rest_missing_callback_param
+              message:
+                type: string
+                examples:
+                  - "Paramètre(s) manquant(s) : username, password"
+              data:
+                type: object
+                properties:
+                  status:
+                    type: integer
+                    examples:
+                      - 400
   requestBody:
     content:
       application/json:
