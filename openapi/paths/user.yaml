@@ -3,7 +3,7 @@ get:
     - Utilisateurs
   summary: Obtenir les données d'un seul utilisateur.
   description: Route permettant de visualiser les données relatives à un utilisateur rattaché au profil manager.
-  operationId: users
+  operationId: user
   security: 
     - bearerAuth: []
   responses:
@@ -153,7 +153,7 @@ post:
     - Utilisateurs
   summary: Ajouter un utilisateur.
   description: Route permettant d'ajouter un ou plusieurs utilisateurs au profil manager.
-  operationId: users
+  operationId: adduser
   security: 
     - bearerAuth: []
   responses:
@@ -303,7 +303,7 @@ put:
     - Utilisateurs
   summary: Modifier les données d'un utilisateur.
   description: Route permettant de modifier les données relatives d'un ou de plusieurs utilisateurs du profil manager.
-  operationId: users
+  operationId: updateuser
   security: 
     - bearerAuth: []
   responses:
