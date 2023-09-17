@@ -1,10 +1,10 @@
-post:
+get:
   tags:
-    - Authentification
-  summary: Obtenir un jeton d'accès (access token)
-  description: Route d'authentification permettant la génération d'un jeton d'accès pour effectuer les autres opérations.
-  operationId: authentication
-  security: []
+    - Utilisateurs
+  summary: Obtenir les données d'un seul utilisateur.
+  description: Route permettant de visualiser les données relatives à un utilisateur rattaché au profil manager.
+  operationId: users
+  security: 
   responses:
     '200':
       description: OK
