@@ -58,7 +58,9 @@ paths:
   /api-bearer-auth/v1/login:
     $ref: paths/authentication.yaml
   /api/v1/user:
-    $ref: paths/getuser.yaml
+    $ref: paths/user.yaml
+  /api/v1/users:
+    $ref: paths/users.yaml
   /pathItem:
     $ref: paths/pathItem.yaml
   /pathItemWithExamples:
@@ -81,6 +83,6 @@ components:
       type: http
       scheme: basic
     bearerAuth:
-        type: http
+        type: https
         scheme: bearer
         bearerFormat: JWT

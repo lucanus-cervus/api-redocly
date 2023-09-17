@@ -1,8 +1,8 @@
 get:
   tags:
     - Utilisateurs
-  summary: Obtenir les données d'un seul utilisateur.
-  description: Route permettant de visualiser les données relatives à un utilisateur rattaché au profil manager.
+  summary: Obtenir les données de tous les utilisateurs.
+  description: Route permettant de visualiser les données relatives à tous les utilisateurs du profil manager.
   operationId: users
   security: 
     - bearerAuth: []
