@@ -98,8 +98,7 @@ post:
                         examples:
                           - true
                   filter:
-                    nullable: true
-                    type: string
+                    type: [string, 'null']
                     examples:
                       - null
               access_token:
