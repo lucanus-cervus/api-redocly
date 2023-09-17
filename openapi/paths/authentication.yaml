@@ -102,6 +102,18 @@ post:
                     type: string
                     examples:
                       - null
+              access_token:
+                type: string
+                examples:
+                  - 1d57a30b847b707d535e9027e9d9c3ec1366ba94b14eb003fbea95509cc10f3f
+              expires_in:
+                type: number
+                examples:
+                  - 1800
+              refresh_token:
+                type: string
+                examples:
+                  - "11b0798227db18c389345d14c6e65fc625cae3fba71a1b32baf1bf2fc5305a55"
           examples:
             response:
               value: Hello world!
