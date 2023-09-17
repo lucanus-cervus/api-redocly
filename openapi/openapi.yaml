@@ -1,7 +1,7 @@
 openapi: 3.1.0
 info:
   version: 1.0.0
-  title: Example.com
+  title: Kipful API
   termsOfService: https://example.com/terms/
   contact:
     email: contact@example.com
@@ -10,7 +10,7 @@ info:
     name: Apache 2.0
     url: http://www.apache.org/licenses/LICENSE-2.0.html
   x-logo:
-    url: https://redocly.github.io/openapi-template/logo.png
+    url: https://i0.wp.com/www.kipful.com/wp-content/uploads/2022/10/KIPFUL-LOGO-BLANC-314x-1.png?fit=986%2C314&ssl=1
   description: >
     This is an **example** API to demonstrate features of the OpenAPI
     specification.
