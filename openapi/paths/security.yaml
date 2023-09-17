@@ -1,8 +1,8 @@
 post:
   tags:
-    - Echo
-  summary: Echo test
-  description: Receive the exact message you've sent
+    - Sécurité
+  summary: Obtenir un jeton d'accès (access token)
+  description: Routes d'authentification permettant la génération d'un jeton d'accès pour effectuer les autres opérations.
   operationId: echo
   security:
     - api_key: []
