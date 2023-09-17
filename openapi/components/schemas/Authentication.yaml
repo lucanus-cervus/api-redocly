@@ -10,5 +10,4 @@ properties:
   password:
     description: Mot de passe du profil manager
     type: string
-    required: true
     example: _tR2jNi482Nc:;
