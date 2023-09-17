@@ -1,9 +1,11 @@
 type: object
+required:
+  - username
+  - password
 properties:
   username:
     description: Nom d'utilisateur ou email du profil manager
     type: string
-    required: true
     example: Kipful-Mana
   password:
     description: Mot de passe du profil manager
