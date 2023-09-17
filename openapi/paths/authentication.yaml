@@ -4,6 +4,7 @@ post:
   summary: Obtenir un jeton d'accès (access token)
   description: Routes d'authentification permettant la génération d'un jeton d'accès pour effectuer les autres opérations.
   operationId: authentication
+  security: []
   responses:
     '200':
       description: OK
