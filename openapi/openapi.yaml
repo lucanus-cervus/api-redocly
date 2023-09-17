@@ -43,8 +43,6 @@ tags:
     description: Routes d'authentification.
   - name: Utilisateurs
     description: Opérations autour des utilisateurs.
-  - name: Tag
-    description: This is a tag description.
 servers:
   # - url: https://www.kipful.com/wp-json # {tenant}
   #   variables:
