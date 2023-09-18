@@ -335,7 +335,7 @@ put:
     content:
       application/json:
         schema:
-          $ref: ../components/schemas/AddUsers.yaml
+          $ref: ../components/schemas/AddUser.yaml
     description: Données obligatoires pour l'ajout d'un ou plusieurs utilisateurs.
     required: true
   x-codeSamples:
