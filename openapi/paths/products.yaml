@@ -47,13 +47,13 @@ get:
                     quantity:
                       type: integer
                       examples:
-                      - 4
-                      - 5
+                        - 4
+                        - 5
                     assigned_quantity: 
                       type: integer
                       examples:
-                      - 2
-                      - 3
+                        - 2
+                        - 3
     '500':
       description: Internal Server Error
       content:
@@ -68,7 +68,7 @@ get:
               message:
                 type: string
                 examples:
-                  - "Nom d'utilisateur inconnu."
+                  - "Profil Manager non trouvé ou non-valide. N'hésitez pas à vous rapprocher de l'équipe de Kipful."
   x-codeSamples:
     - lang: C#
       source:

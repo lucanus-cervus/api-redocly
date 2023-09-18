@@ -335,8 +335,8 @@ put:
     content:
       application/json:
         schema:
-          $ref: ../components/schemas/Authentication.yaml
-    description: Authentification à partir des données de connexion du profil manager.
+          $ref: ../components/schemas/AddUsers.yaml
+    description: Données obligatoires pour l'ajout d'un ou plusieurs utilisateurs.
     required: true
   x-codeSamples:
     - lang: C#

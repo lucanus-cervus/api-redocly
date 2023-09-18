@@ -1,0 +1,43 @@
+type: object
+required:
+  - email
+  - firstname
+  - lastname
+  - card
+  - subscription
+properties:
+  username:
+    description: Un tableau contenant l'email ou les emails des différents utilisateurs.
+    type: array
+    items:
+      type: string
+    example: 
+      - ["user1@kipful.com", "user2@kipful.com"]
+  firstname:
+    description: Un tableau contenant le prénom ou les prénoms des différents utilisateurs.
+    type: array
+    items:
+      type: string
+    example: 
+      - ["Inaya", "Jules"]
+  lastname:
+    description: Un tableau contenant le nom ou les noms des différents utilisateurs.
+    type: array
+    items:
+      type: string
+    example: 
+      - ["Mane", "Doe"]
+  card:
+    description: "Un tableau contenant le nom ou les noms des produits à assigner. Ordre imposé : premier produit assigné au premier utilisateur, deuxième produit assigné au deuxième utilisateur..."
+    type: array
+    items:
+      type: string
+    example: 
+      - ["Bois Impression Sur-Mesure Profil-Manager - Bambou", "PVC Sur-mesure Profil-Manager - Blanche"]
+  subscription:
+    description: "Un tableau contenant des boolean permettant de définir si un abonnement doit être attribué à un utilisateur ou non. Ordre imposé : premier boolean assigné au premier utilisateur, deuxième boolean assigné au deuxième utilisateur. Dans l'exemple, le premier utilisateur possédera un abonnement, le second n'en aura pas."
+    type: array
+    items:
+      type: boolean
+    example: 
+      - [true, false]
