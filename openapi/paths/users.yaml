@@ -685,12 +685,12 @@ get:
                       - "Jeune entrepreneur"
                   function_display:
                     type: string
-                    description: Fonction au sein de l'entreprise
+                    description: Fonction au sein de l\'entreprise
                     examples:
                       - "Entrepreneur"
                   company_display:
                     type: string
-                    description: Nom de l'entreprise
+                    description: Nom de l\'entreprise
                     examples:
                       - "Kipful"
                   profile_picture:
@@ -705,12 +705,12 @@ get:
                       - "https://www.kipful.com/wp-content/themes/apzo/images/up/6042-1694990137cover.png"
                   display_logo:
                     type: boolean
-                    description: Est-ce que le logo de l'entreprise est affiché sur le profil. Si true, le logo de l'entreprise remplace celui de Kipful
+                    description: Est-ce que le logo de l\'entreprise est affiché sur le profil. Si true, le logo de l\'entreprise remplace celui de Kipful
                     examples: 
                       - true
                   logo_company_link:
                     type: string
-                    description: Lien du logo de l'entreprise
+                    description: Lien du logo de l\'entreprise
                     examples:
                       - "https://www.kipful.com/wp-content/themes/apzo/images/logo/6042-1694990137cover.png"
                   custom_template_profile:
@@ -1407,12 +1407,12 @@ get:
                       - "Jeune entrepreneur"
                   function_display:
                     type: string
-                    description: Fonction au sein de l'entreprise
+                    description: Fonction au sein de l\'entreprise
                     examples:
                       - "Entrepreneur"
                   company_display:
                     type: string
-                    description: Nom de l'entreprise
+                    description: Nom de l\'entreprise
                     examples:
                       - "Kipful"
                   profile_picture:
@@ -1427,12 +1427,12 @@ get:
                       - "https://www.kipful.com/wp-content/themes/apzo/images/up/6042-1694990137cover.png"
                   display_logo:
                     type: boolean
-                    description: Est-ce que le logo de l'entreprise est affiché sur le profil. Si true, le logo de l'entreprise remplace celui de Kipful
+                    description: Est-ce que le logo de l\'entreprise est affiché sur le profil. Si true, le logo de l\'entreprise remplace celui de Kipful
                     examples: 
                       - true
                   logo_company_link:
                     type: string
-                    description: Lien du logo de l'entreprise
+                    description: Lien du logo de l\'entreprise
                     examples:
                       - "https://www.kipful.com/wp-content/themes/apzo/images/logo/6042-1694990137cover.png"
                   custom_template_profile:
