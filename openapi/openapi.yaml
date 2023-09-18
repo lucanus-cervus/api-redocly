@@ -32,10 +32,10 @@ servers:
 paths:
   /api-bearer-auth/v1/login:
     $ref: paths/authentication.yaml
-  /api/v1/users:
-    $ref: paths/users.yaml
   /api/v1/user/{username}:
     $ref: paths/user.yaml
+  /api/v1/users:
+    $ref: paths/users.yaml
 components:
   securitySchemes:
     main_auth:

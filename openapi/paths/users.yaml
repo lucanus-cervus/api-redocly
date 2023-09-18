@@ -14,133 +14,1476 @@ get:
           schema:
             type: object
             properties:
-              wp_users:
-                type: object
-                properties:
-                  data:
+              success:
+                type: boolean
+                examples:
+                  - true
+              users:
+                type: array
+                items:
+                  type: object
+                description: La plupart des données demandent simplement le compte, les liens sont ensuite formatés sur le site Kipful directement
+                examples:
+                  [
+                    {facebook:
                     type: object
+                    description: Compte Facebook
                     properties:
-                      ID:
+                      a:
                         type: string
                         examples:
-                          - "15689548"
-                      user_login:
+                          - "Kipful"
+                      b:
                         type: string
-                        examples:
-                          - api.kipful
-                      user_nicename:
+                        examples: 
+                          - ""
+                      c:
                         type: string
-                        examples:
-                          - api.kipful
-                      user_email:
+                        examples: 
+                          - ""
+                      d:
                         type: string
-                        examples:
-                          - api@kipful.com
-                      user_url:
+                        examples: 
+                          - ""
+                      e:
                         type: string
-                      user_registered:
-                        type: string
-                        examples:
-                          - "2023-04-15 07:21:59"
-                      user_activation_key:
-                        type: string
-                        examples:
-                          - "165641241:$P$B9DSQeqwZOEAZEsdSFFZEUq1068RSR0"
-                      user_status:
-                        type: string
-                        examples:
-                          - "0"
-                      display_name:
-                        type: string
-                        examples:
-                          - "Api Kipful"   
-                  ID:
-                    type: integer
-                    examples:
-                      - 15689548
-                  caps:
+                        examples: 
+                          - ""
+                  instagram:
                     type: object
+                    description: Compte instagram
                     properties:
-                      profil_manager:
-                        type: boolean
+                      a:
+                        type: string
                         examples:
-                          - true
-                  cap_key:
+                          - "Kipful"
+                      b:
+                        type: string
+                        examples: 
+                          - ""
+                      c:
+                        type: string
+                        examples: 
+                          - ""
+                      d:
+                        type: string
+                        examples: 
+                          - ""
+                      e:
+                        type: string
+                        examples: 
+                          - ""
+                  linkedin:
+                    type: object
+                    description: Compte Linkedin
+                    properties:
+                      a:
+                        type: string
+                        examples:
+                          - "Kipful"
+                      b:
+                        type: string
+                        examples: 
+                          - ""
+                      c:
+                        type: string
+                        examples: 
+                          - ""
+                      d:
+                        type: string
+                        examples: 
+                          - ""
+                      e:
+                        type: string
+                        examples: 
+                          - ""
+                  contact_info:
+                    type: object
+                    description: Numéro de téléphone
+                    properties:
+                      a:
+                        type: string
+                        examples:
+                          - "+33633667788"
+                      b:
+                        type: string
+                        examples: 
+                          - ""
+                      c:
+                        type: string
+                        examples: 
+                          - ""
+                      d:
+                        type: string
+                        examples: 
+                          - ""
+                      e:
+                        type: string
+                        examples: 
+                          - ""
+                  contact_info_additional:
+                    type: object
+                    description: Numéro de téléphone supplémentaire
+                    properties:
+                      a:
+                        type: string
+                        examples:
+                          - "+33633667788"
+                      b:
+                        type: string
+                        examples: 
+                          - ""
+                      c:
+                        type: string
+                        examples: 
+                          - ""
+                      d:
+                        type: string
+                        examples: 
+                          - ""
+                      e:
+                        type: string
+                        examples: 
+                          - ""
+                  your_website:
+                    type: object
+                    description: Lien vers votre site
+                    properties:
+                      a:
+                        type: string
+                        examples:
+                          - "https://www.kipful.com/"
+                      b:
+                        type: string
+                        examples: 
+                          - ""
+                      c:
+                        type: string
+                        examples: 
+                          - ""
+                      d:
+                        type: string
+                        examples: 
+                          - ""
+                      e:
+                        type: string
+                        examples: 
+                          - ""
+                  youtube:
+                    type: object
+                    description: Nom de la chaine Youtube
+                    properties:
+                      a:
+                        type: string
+                        examples:
+                          - "Kipful"
+                      b:
+                        type: string
+                        examples: 
+                          - ""
+                      c:
+                        type: string
+                        examples: 
+                          - ""
+                      d:
+                        type: string
+                        examples: 
+                          - ""
+                      e:
+                        type: string
+                        examples: 
+                          - ""
+                  tiktok:
+                    type: object
+                    description: Compte Tiktok
+                    properties:
+                      a:
+                        type: string
+                        examples:
+                          - "Kipful"
+                      b:
+                        type: string
+                        examples: 
+                          - ""
+                      c:
+                        type: string
+                        examples: 
+                          - ""
+                      d:
+                        type: string
+                        examples: 
+                          - ""
+                      e:
+                        type: string
+                        examples: 
+                          - ""
+                  msteams:
+                    type: object
+                    description: Profil Microsoft Teams
+                    properties:
+                      a:
+                        type: string
+                        examples:
+                          - "Kipful"
+                      b:
+                        type: string
+                        examples: 
+                          - ""
+                      c:
+                        type: string
+                        examples: 
+                          - ""
+                      d:
+                        type: string
+                        examples: 
+                          - ""
+                      e:
+                        type: string
+                        examples: 
+                          - ""
+                  snapchat:
+                    type: object
+                    description: Compte Snapchat
+                    properties:
+                      a:
+                        type: string
+                        examples:
+                          - "Kipful"
+                      b:
+                        type: string
+                        examples: 
+                          - ""
+                      c:
+                        type: string
+                        examples: 
+                          - ""
+                      d:
+                        type: string
+                        examples: 
+                          - ""
+                      e:
+                        type: string
+                        examples: 
+                          - ""
+                  email:
+                    type: object
+                    description: Votre adresse email
+                    properties:
+                      a:
+                        type: string
+                        examples:
+                          - "kipful@contact.com"
+                      b:
+                        type: string
+                        examples: 
+                          - ""
+                      c:
+                        type: string
+                        examples: 
+                          - ""
+                      d:
+                        type: string
+                        examples: 
+                          - ""
+                      e:
+                        type: string
+                        examples: 
+                          - ""
+                  whatsapp:
+                    type: object
+                    description: Numéro de téléphone WhatsApp
+                    properties:
+                      a:
+                        type: string
+                        examples:
+                          - "+33633445566"
+                      b:
+                        type: string
+                        examples: 
+                          - ""
+                      c:
+                        type: string
+                        examples: 
+                          - ""
+                      d:
+                        type: string
+                        examples: 
+                          - ""
+                      e:
+                        type: string
+                        examples: 
+                          - ""
+                  twitter:
+                    type: object
+                    description: Compte Twitter - X
+                    properties:
+                      a:
+                        type: string
+                        examples:
+                          - "Kipful"
+                      b:
+                        type: string
+                        examples: 
+                          - ""
+                      c:
+                        type: string
+                        examples: 
+                          - ""
+                      d:
+                        type: string
+                        examples: 
+                          - ""
+                      e:
+                        type: string
+                        examples: 
+                          - ""
+                  pinterest:
+                    type: object
+                    description: Compte Pinterest
+                    properties:
+                      a:
+                        type: string
+                        examples:
+                          - "Kipful"
+                      b:
+                        type: string
+                        examples: 
+                          - ""
+                      c:
+                        type: string
+                        examples: 
+                          - ""
+                      d:
+                        type: string
+                        examples: 
+                          - ""
+                      e:
+                        type: string
+                        examples: 
+                          - ""
+                  skype:
+                    type: object
+                    description: Compte Skype
+                    properties:
+                      a:
+                        type: string
+                        examples:
+                          - "Kipful"
+                      b:
+                        type: string
+                        examples: 
+                          - ""
+                      c:
+                        type: string
+                        examples: 
+                          - ""
+                      d:
+                        type: string
+                        examples: 
+                          - ""
+                      e:
+                        type: string
+                        examples: 
+                          - ""
+                  paypal:
+                    type: object
+                    description: Adresse email de votre compte Paypal
+                    properties:
+                      a:
+                        type: string
+                        examples:
+                          - "kipful@contact.com"
+                      b:
+                        type: string
+                        examples: 
+                          - ""
+                      c:
+                        type: string
+                        examples: 
+                          - ""
+                      d:
+                        type: string
+                        examples: 
+                          - ""
+                      e:
+                        type: string
+                        examples: 
+                          - ""
+                  any_link:
+                    type: object
+                    description: Lien Internet
+                    properties:
+                      a:
+                        type: string
+                        examples:
+                          - "https://www.kipful.com/"
+                      b:
+                        type: string
+                        examples: 
+                          - ""
+                      c:
+                        type: string
+                        examples: 
+                          - ""
+                      d:
+                        type: string
+                        examples: 
+                          - ""
+                      e:
+                        type: string
+                        examples: 
+                          - ""
+                  fbmessenger:
+                    type: object
+                    description: Compte Facebook Messenger
+                    properties:
+                      a:
+                        type: string
+                        examples:
+                          - "Kipful"
+                      b:
+                        type: string
+                        examples: 
+                          - ""
+                      c:
+                        type: string
+                        examples: 
+                          - ""
+                      d:
+                        type: string
+                        examples: 
+                          - ""
+                      e:
+                        type: string
+                        examples: 
+                          - ""
+                  sms:
+                    type: object
+                    description: Numéro de téléphone
+                    properties:
+                      a:
+                        type: string
+                        examples:
+                          - "+33633445566"
+                      b:
+                        type: string
+                        examples: 
+                          - ""
+                      c:
+                        type: string
+                        examples: 
+                          - ""
+                      d:
+                        type: string
+                        examples: 
+                          - ""
+                      e:
+                        type: string
+                        examples: 
+                          - ""
+                  kambassador:
+                    type: object
+                    description: Compte Kipful Ambassador
+                    properties:
+                      a:
+                        type: string
+                        examples:
+                          - "Kipful"
+                      b:
+                        type: string
+                        examples: 
+                          - ""
+                      c:
+                        type: string
+                        examples: 
+                          - ""
+                      d:
+                        type: string
+                        examples: 
+                          - ""
+                      e:
+                        type: string
+                        examples: 
+                          - ""
+                  twitch:
+                    type: object
+                    description: Chaine Twitch
+                    properties:
+                      a:
+                        type: string
+                        examples:
+                          - "Kipful"
+                      b:
+                        type: string
+                        examples: 
+                          - ""
+                      c:
+                        type: string
+                        examples: 
+                          - ""
+                      d:
+                        type: string
+                        examples: 
+                          - ""
+                      e:
+                        type: string
+                        examples: 
+                          - ""
+                  greviews:
+                    type: object
+                    description: Compte Google Reviews
+                    properties:
+                      a:
+                        type: string
+                        examples:
+                          - "Kipful"
+                      b:
+                        type: string
+                        examples: 
+                          - ""
+                      c:
+                        type: string
+                        examples: 
+                          - ""
+                      d:
+                        type: string
+                        examples: 
+                          - ""
+                      e:
+                        type: string
+                        examples: 
+                          - ""
+                  adresse:
+                    type: object
+                    description: Votre adresse
+                    properties:
+                      a:
+                        type: string
+                        examples:
+                          - "5 rue des jonquilles, 75001, Paris"
+                      b:
+                        type: string
+                        examples: 
+                          - ""
+                      c:
+                        type: string
+                        examples: 
+                          - ""
+                      d:
+                        type: string
+                        examples: 
+                          - ""
+                      e:
+                        type: string
+                        examples: 
+                          - ""
+                  spotify:
+                    type: object
+                    description: Compte Spotify
+                    properties:
+                      a:
+                        type: string
+                        examples:
+                          - "Kipful"
+                      b:
+                        type: string
+                        examples: 
+                          - ""
+                      c:
+                        type: string
+                        examples: 
+                          - ""
+                      d:
+                        type: string
+                        examples: 
+                          - ""
+                      e:
+                        type: string
+                        examples: 
+                          - ""
+                  amusic:
+                    type: object
+                    description: Compte Apple Music
+                    properties:
+                      a:
+                        type: string
+                        examples:
+                          - "Kipful"
+                      b:
+                        type: string
+                        examples: 
+                          - ""
+                      c:
+                        type: string
+                        examples: 
+                          - ""
+                      d:
+                        type: string
+                        examples: 
+                          - ""
+                      e:
+                        type: string
+                        examples: 
+                          - ""
+                  scloud:
+                    type: object
+                    description: Compte SoundCloud
+                    properties:
+                      a:
+                        type: string
+                        examples:
+                          - "Kipful"
+                      b:
+                        type: string
+                        examples: 
+                          - ""
+                      c:
+                        type: string
+                        examples: 
+                          - ""
+                      d:
+                        type: string
+                        examples: 
+                          - ""
+                      e:
+                        type: string
+                        examples: 
+                          - ""
+                  calendly:
+                    type: object
+                    description: Compte Calendly
+                    properties:
+                      a:
+                        type: string
+                        examples:
+                          - "Kipful"
+                      b:
+                        type: string
+                        examples: 
+                          - ""
+                      c:
+                        type: string
+                        examples: 
+                          - ""
+                      d:
+                        type: string
+                        examples: 
+                          - ""
+                      e:
+                        type: string
+                        examples: 
+                          - ""
+                  name_display:
                     type: string
+                    description: Prénom et nom affichés sur le profil
                     examples:
-                      - wp_capabilities
-                  roles:
-                    type: array
-                    items:
-                      type: string
+                      - "Pierre Dupont"
+                  bio_display:
+                    type: string
+                    description: Bio du profil
                     examples:
-                      - ['profil_manager']
-                  allcaps:
+                      - "Jeune entrepreneur"
+                  function_display:
+                    type: string
+                    description: Fonction au sein de l'entreprise
+                    examples:
+                      - "Entrepreneur"
+                  company_display:
+                    type: string
+                    description: Nom de l'entreprise
+                    examples:
+                      - "Kipful"
+                  profile_picture:
+                    type: string
+                    description: Photo de profil
+                    examples:
+                      - "https://www.kipful.com/wp-content/themes/apzo/images/up/6042-1694990137prof.png"
+                  profile_cover:
+                    type: string
+                    description: Photo de couverture du profil
+                    examples:
+                      - "https://www.kipful.com/wp-content/themes/apzo/images/up/6042-1694990137cover.png"
+                  display_logo:
+                    type: boolean
+                    description: Est-ce que le logo de l'entreprise est affiché sur le profil. Si true, le logo de l'entreprise remplace celui de Kipful
+                    examples: 
+                      - true
+                  logo_company_link:
+                    type: string
+                    description: Lien du logo de l'entreprise
+                    examples:
+                      - "https://www.kipful.com/wp-content/themes/apzo/images/logo/6042-1694990137cover.png"
+                  custom_template_profile:
                     type: object
+                    description: Style du profil
                     properties:
-                      read:
-                        type: boolean
+                      color: 
+                        description: Couleur des textes du profil
+                        type: string
                         examples:
-                          - true
-                      level_0:
-                        type: boolean
+                          - "#ffffff"
+                      btnColor:
+                        type: string
+                        description: Couleur du bouton "Ajouter aux contacts"
                         examples:
-                          - true
-                      profil_manager:
-                        type: boolean
+                          - "#000000"      
+                      background:
+                        description: "Couleur du fond du profil"
+                        type: string
                         examples:
-                          - true
-                  filter:
-                    type: [string, 'null']
+                          - "#000000"     
+                      fontFamily:
+                        description: Police d'écriture du profil
+                        type: string
+                        examples:
+                          - "Comfortaa"    
+                      borderColor:
+                        description: Couleur de la bordure encadrant la photo de profil
+                        type: string
+                        examples:
+                          - "#ffffff"     
+                      interfaceColor:
+                        description: Couleur des éléments d'interface du profil
+                        type: string
+                        examples:
+                          - "#4ff6ff"},
+                  {facebook:
+                    type: object
+                    description: Compte Facebook
+                    properties:
+                      a:
+                        type: string
+                        examples:
+                          - "Kipful"
+                      b:
+                        type: string
+                        examples: 
+                          - ""
+                      c:
+                        type: string
+                        examples: 
+                          - ""
+                      d:
+                        type: string
+                        examples: 
+                          - ""
+                      e:
+                        type: string
+                        examples: 
+                          - ""
+                  instagram:
+                    type: object
+                    description: Compte instagram
+                    properties:
+                      a:
+                        type: string
+                        examples:
+                          - "Kipful"
+                      b:
+                        type: string
+                        examples: 
+                          - ""
+                      c:
+                        type: string
+                        examples: 
+                          - ""
+                      d:
+                        type: string
+                        examples: 
+                          - ""
+                      e:
+                        type: string
+                        examples: 
+                          - ""
+                  linkedin:
+                    type: object
+                    description: Compte Linkedin
+                    properties:
+                      a:
+                        type: string
+                        examples:
+                          - "Kipful"
+                      b:
+                        type: string
+                        examples: 
+                          - ""
+                      c:
+                        type: string
+                        examples: 
+                          - ""
+                      d:
+                        type: string
+                        examples: 
+                          - ""
+                      e:
+                        type: string
+                        examples: 
+                          - ""
+                  contact_info:
+                    type: object
+                    description: Numéro de téléphone
+                    properties:
+                      a:
+                        type: string
+                        examples:
+                          - "+33633667788"
+                      b:
+                        type: string
+                        examples: 
+                          - ""
+                      c:
+                        type: string
+                        examples: 
+                          - ""
+                      d:
+                        type: string
+                        examples: 
+                          - ""
+                      e:
+                        type: string
+                        examples: 
+                          - ""
+                  contact_info_additional:
+                    type: object
+                    description: Numéro de téléphone supplémentaire
+                    properties:
+                      a:
+                        type: string
+                        examples:
+                          - "+33633667788"
+                      b:
+                        type: string
+                        examples: 
+                          - ""
+                      c:
+                        type: string
+                        examples: 
+                          - ""
+                      d:
+                        type: string
+                        examples: 
+                          - ""
+                      e:
+                        type: string
+                        examples: 
+                          - ""
+                  your_website:
+                    type: object
+                    description: Lien vers votre site
+                    properties:
+                      a:
+                        type: string
+                        examples:
+                          - "https://www.kipful.com/"
+                      b:
+                        type: string
+                        examples: 
+                          - ""
+                      c:
+                        type: string
+                        examples: 
+                          - ""
+                      d:
+                        type: string
+                        examples: 
+                          - ""
+                      e:
+                        type: string
+                        examples: 
+                          - ""
+                  youtube:
+                    type: object
+                    description: Nom de la chaine Youtube
+                    properties:
+                      a:
+                        type: string
+                        examples:
+                          - "Kipful"
+                      b:
+                        type: string
+                        examples: 
+                          - ""
+                      c:
+                        type: string
+                        examples: 
+                          - ""
+                      d:
+                        type: string
+                        examples: 
+                          - ""
+                      e:
+                        type: string
+                        examples: 
+                          - ""
+                  tiktok:
+                    type: object
+                    description: Compte Tiktok
+                    properties:
+                      a:
+                        type: string
+                        examples:
+                          - "Kipful"
+                      b:
+                        type: string
+                        examples: 
+                          - ""
+                      c:
+                        type: string
+                        examples: 
+                          - ""
+                      d:
+                        type: string
+                        examples: 
+                          - ""
+                      e:
+                        type: string
+                        examples: 
+                          - ""
+                  msteams:
+                    type: object
+                    description: Profil Microsoft Teams
+                    properties:
+                      a:
+                        type: string
+                        examples:
+                          - "Kipful"
+                      b:
+                        type: string
+                        examples: 
+                          - ""
+                      c:
+                        type: string
+                        examples: 
+                          - ""
+                      d:
+                        type: string
+                        examples: 
+                          - ""
+                      e:
+                        type: string
+                        examples: 
+                          - ""
+                  snapchat:
+                    type: object
+                    description: Compte Snapchat
+                    properties:
+                      a:
+                        type: string
+                        examples:
+                          - "Kipful"
+                      b:
+                        type: string
+                        examples: 
+                          - ""
+                      c:
+                        type: string
+                        examples: 
+                          - ""
+                      d:
+                        type: string
+                        examples: 
+                          - ""
+                      e:
+                        type: string
+                        examples: 
+                          - ""
+                  email:
+                    type: object
+                    description: Votre adresse email
+                    properties:
+                      a:
+                        type: string
+                        examples:
+                          - "kipful@contact.com"
+                      b:
+                        type: string
+                        examples: 
+                          - ""
+                      c:
+                        type: string
+                        examples: 
+                          - ""
+                      d:
+                        type: string
+                        examples: 
+                          - ""
+                      e:
+                        type: string
+                        examples: 
+                          - ""
+                  whatsapp:
+                    type: object
+                    description: Numéro de téléphone WhatsApp
+                    properties:
+                      a:
+                        type: string
+                        examples:
+                          - "+33633445566"
+                      b:
+                        type: string
+                        examples: 
+                          - ""
+                      c:
+                        type: string
+                        examples: 
+                          - ""
+                      d:
+                        type: string
+                        examples: 
+                          - ""
+                      e:
+                        type: string
+                        examples: 
+                          - ""
+                  twitter:
+                    type: object
+                    description: Compte Twitter - X
+                    properties:
+                      a:
+                        type: string
+                        examples:
+                          - "Kipful"
+                      b:
+                        type: string
+                        examples: 
+                          - ""
+                      c:
+                        type: string
+                        examples: 
+                          - ""
+                      d:
+                        type: string
+                        examples: 
+                          - ""
+                      e:
+                        type: string
+                        examples: 
+                          - ""
+                  pinterest:
+                    type: object
+                    description: Compte Pinterest
+                    properties:
+                      a:
+                        type: string
+                        examples:
+                          - "Kipful"
+                      b:
+                        type: string
+                        examples: 
+                          - ""
+                      c:
+                        type: string
+                        examples: 
+                          - ""
+                      d:
+                        type: string
+                        examples: 
+                          - ""
+                      e:
+                        type: string
+                        examples: 
+                          - ""
+                  skype:
+                    type: object
+                    description: Compte Skype
+                    properties:
+                      a:
+                        type: string
+                        examples:
+                          - "Kipful"
+                      b:
+                        type: string
+                        examples: 
+                          - ""
+                      c:
+                        type: string
+                        examples: 
+                          - ""
+                      d:
+                        type: string
+                        examples: 
+                          - ""
+                      e:
+                        type: string
+                        examples: 
+                          - ""
+                  paypal:
+                    type: object
+                    description: Adresse email de votre compte Paypal
+                    properties:
+                      a:
+                        type: string
+                        examples:
+                          - "kipful@contact.com"
+                      b:
+                        type: string
+                        examples: 
+                          - ""
+                      c:
+                        type: string
+                        examples: 
+                          - ""
+                      d:
+                        type: string
+                        examples: 
+                          - ""
+                      e:
+                        type: string
+                        examples: 
+                          - ""
+                  any_link:
+                    type: object
+                    description: Lien Internet
+                    properties:
+                      a:
+                        type: string
+                        examples:
+                          - "https://www.kipful.com/"
+                      b:
+                        type: string
+                        examples: 
+                          - ""
+                      c:
+                        type: string
+                        examples: 
+                          - ""
+                      d:
+                        type: string
+                        examples: 
+                          - ""
+                      e:
+                        type: string
+                        examples: 
+                          - ""
+                  fbmessenger:
+                    type: object
+                    description: Compte Facebook Messenger
+                    properties:
+                      a:
+                        type: string
+                        examples:
+                          - "Kipful"
+                      b:
+                        type: string
+                        examples: 
+                          - ""
+                      c:
+                        type: string
+                        examples: 
+                          - ""
+                      d:
+                        type: string
+                        examples: 
+                          - ""
+                      e:
+                        type: string
+                        examples: 
+                          - ""
+                  sms:
+                    type: object
+                    description: Numéro de téléphone
+                    properties:
+                      a:
+                        type: string
+                        examples:
+                          - "+33633445566"
+                      b:
+                        type: string
+                        examples: 
+                          - ""
+                      c:
+                        type: string
+                        examples: 
+                          - ""
+                      d:
+                        type: string
+                        examples: 
+                          - ""
+                      e:
+                        type: string
+                        examples: 
+                          - ""
+                  kambassador:
+                    type: object
+                    description: Compte Kipful Ambassador
+                    properties:
+                      a:
+                        type: string
+                        examples:
+                          - "Kipful"
+                      b:
+                        type: string
+                        examples: 
+                          - ""
+                      c:
+                        type: string
+                        examples: 
+                          - ""
+                      d:
+                        type: string
+                        examples: 
+                          - ""
+                      e:
+                        type: string
+                        examples: 
+                          - ""
+                  twitch:
+                    type: object
+                    description: Chaine Twitch
+                    properties:
+                      a:
+                        type: string
+                        examples:
+                          - "Kipful"
+                      b:
+                        type: string
+                        examples: 
+                          - ""
+                      c:
+                        type: string
+                        examples: 
+                          - ""
+                      d:
+                        type: string
+                        examples: 
+                          - ""
+                      e:
+                        type: string
+                        examples: 
+                          - ""
+                  greviews:
+                    type: object
+                    description: Compte Google Reviews
+                    properties:
+                      a:
+                        type: string
+                        examples:
+                          - "Kipful"
+                      b:
+                        type: string
+                        examples: 
+                          - ""
+                      c:
+                        type: string
+                        examples: 
+                          - ""
+                      d:
+                        type: string
+                        examples: 
+                          - ""
+                      e:
+                        type: string
+                        examples: 
+                          - ""
+                  adresse:
+                    type: object
+                    description: Votre adresse
+                    properties:
+                      a:
+                        type: string
+                        examples:
+                          - "5 rue des jonquilles, 75001, Paris"
+                      b:
+                        type: string
+                        examples: 
+                          - ""
+                      c:
+                        type: string
+                        examples: 
+                          - ""
+                      d:
+                        type: string
+                        examples: 
+                          - ""
+                      e:
+                        type: string
+                        examples: 
+                          - ""
+                  spotify:
+                    type: object
+                    description: Compte Spotify
+                    properties:
+                      a:
+                        type: string
+                        examples:
+                          - "Kipful"
+                      b:
+                        type: string
+                        examples: 
+                          - ""
+                      c:
+                        type: string
+                        examples: 
+                          - ""
+                      d:
+                        type: string
+                        examples: 
+                          - ""
+                      e:
+                        type: string
+                        examples: 
+                          - ""
+                  amusic:
+                    type: object
+                    description: Compte Apple Music
+                    properties:
+                      a:
+                        type: string
+                        examples:
+                          - "Kipful"
+                      b:
+                        type: string
+                        examples: 
+                          - ""
+                      c:
+                        type: string
+                        examples: 
+                          - ""
+                      d:
+                        type: string
+                        examples: 
+                          - ""
+                      e:
+                        type: string
+                        examples: 
+                          - ""
+                  scloud:
+                    type: object
+                    description: Compte SoundCloud
+                    properties:
+                      a:
+                        type: string
+                        examples:
+                          - "Kipful"
+                      b:
+                        type: string
+                        examples: 
+                          - ""
+                      c:
+                        type: string
+                        examples: 
+                          - ""
+                      d:
+                        type: string
+                        examples: 
+                          - ""
+                      e:
+                        type: string
+                        examples: 
+                          - ""
+                  calendly:
+                    type: object
+                    description: Compte Calendly
+                    properties:
+                      a:
+                        type: string
+                        examples:
+                          - "Kipful"
+                      b:
+                        type: string
+                        examples: 
+                          - ""
+                      c:
+                        type: string
+                        examples: 
+                          - ""
+                      d:
+                        type: string
+                        examples: 
+                          - ""
+                      e:
+                        type: string
+                        examples: 
+                          - ""
+                  name_display:
+                    type: string
+                    description: Prénom et nom affichés sur le profil
                     examples:
-                      - null
-              access_token:
-                type: string
-                examples:
-                  - 1d57a30b847b707d535e9027e9d9c3ec1366ba94b14eb003fbea95509cc10f3f
-              expires_in:
-                type: number
-                examples:
-                  - 1800
-              refresh_token:
-                type: string
-                examples:
-                  - "11b0798227db18c389345d14c6e65fc625cae3fba71a1b32baf1bf2fc5305a55"
-    '400':
-      description: Unauthorized
+                      - "Pierre Dupont"
+                  bio_display:
+                    type: string
+                    description: Bio du profil
+                    examples:
+                      - "Jeune entrepreneur"
+                  function_display:
+                    type: string
+                    description: Fonction au sein de l'entreprise
+                    examples:
+                      - "Entrepreneur"
+                  company_display:
+                    type: string
+                    description: Nom de l'entreprise
+                    examples:
+                      - "Kipful"
+                  profile_picture:
+                    type: string
+                    description: Photo de profil
+                    examples:
+                      - "https://www.kipful.com/wp-content/themes/apzo/images/up/6042-1694990137prof.png"
+                  profile_cover:
+                    type: string
+                    description: Photo de couverture du profil
+                    examples:
+                      - "https://www.kipful.com/wp-content/themes/apzo/images/up/6042-1694990137cover.png"
+                  display_logo:
+                    type: boolean
+                    description: Est-ce que le logo de l'entreprise est affiché sur le profil. Si true, le logo de l'entreprise remplace celui de Kipful
+                    examples: 
+                      - true
+                  logo_company_link:
+                    type: string
+                    description: Lien du logo de l'entreprise
+                    examples:
+                      - "https://www.kipful.com/wp-content/themes/apzo/images/logo/6042-1694990137cover.png"
+                  custom_template_profile:
+                    type: object
+                    description: Style du profil
+                    properties:
+                      color: 
+                        description: Couleur des textes du profil
+                        type: string
+                        examples:
+                          - "#ffffff"
+                      btnColor:
+                        type: string
+                        description: Couleur du bouton "Ajouter aux contacts"
+                        examples:
+                          - "#000000"      
+                      background:
+                        description: "Couleur du fond du profil"
+                        type: string
+                        examples:
+                          - "#000000"     
+                      fontFamily:
+                        description: Police d'écriture du profil
+                        type: string
+                        examples:
+                          - "Comfortaa"    
+                      borderColor:
+                        description: Couleur de la bordure encadrant la photo de profil
+                        type: string
+                        examples:
+                          - "#ffffff"     
+                      interfaceColor:
+                        description: Couleur des éléments d'interface du profil
+                        type: string
+                        examples:
+                          - "#4ff6ff"}]                                                                                          
+    '500':
+      description: Internal Server Error
       content:
         application/json:
           schema:
             type: object
             properties:
-              code:
-                type: string
+              success:
+                type: boolean
                 examples:
-                  - rest_missing_callback_param
+                  - false
               message:
                 type: string
                 examples:
-                  - "Paramètre(s) manquant(s) : username, password"
-              data:
-                type: object
-                properties:
-                  status:
-                    type: integer
-                    examples:
-                      - 400
-                  params:
-                    type: array
-                    items:
-                      type: string
-                    examples:
-                      - ['username', 'password']
-  requestBody:
-    content:
-      application/json:
-        schema:
-          $ref: ../components/schemas/Authentication.yaml
-    description: Authentification à partir des données de connexion du profil manager.
-    required: true
+                  - "Nom d'utilisateur inconnu."
   x-codeSamples:
     - lang: C#
       source:
