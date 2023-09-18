@@ -25,7 +25,7 @@ get:
                 description: La plupart des données demandent simplement le compte, les liens sont ensuite formatés sur le site Kipful directement
                 examples:
                   [
-                    {facebook:
+                    'facebook:
                     type: object
                     description: Compte Facebook
                     properties:
@@ -746,8 +746,8 @@ get:
                         description: Couleur des éléments d'interface du profil
                         type: string
                         examples:
-                          - "#4ff6ff"},
-                  {facebook:
+                          - "#4ff6ff"',
+                  'facebook:
                     type: object
                     description: Compte Facebook
                     properties:
@@ -1468,7 +1468,7 @@ get:
                         description: Couleur des éléments d'interface du profil
                         type: string
                         examples:
-                          - "#4ff6ff"}]                                                                                          
+                          - "#4ff6ff"']                                                                                          
     '500':
       description: Internal Server Error
       content:
