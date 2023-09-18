@@ -6,7 +6,7 @@ required:
   - card
   - subscription
 properties:
-  username:
+  email:
     description: Un tableau contenant l'email ou les emails des différents utilisateurs.
     type: array
     items:
