@@ -34,7 +34,7 @@ paths:
     $ref: paths/authentication.yaml
   /api/v1/users:
     $ref: paths/users.yaml
-  /api/v1/user:
+  /api/v1/user/{username}:
     $ref: paths/user.yaml
 components:
   securitySchemes:
