@@ -42,15 +42,18 @@ get:
                     product_name:
                       type: string
                       examples:
-                        - "PVC Sur-mesure Profil-Manager - Blanche"   
+                        - "Bois Impression Sur-Mesure Profil-Manager - Bambou"   
+                        - "PVC Sur-mesure Profil-Manager - Blanche"
                     quantity:
                       type: integer
                       examples:
                       - 4
+                      - 5
                     assigned_quantity: 
                       type: integer
                       examples:
                       - 2
+                      - 3
     '500':
       description: Internal Server Error
       content:
