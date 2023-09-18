@@ -1,0 +1,47 @@
+get:
+  tags:
+    - Produits
+  summary: Obtenir la liste des produits possédés.
+  description: Route permettant de visualiser l'ensemble des produits possédés (cartes, abonnements...), quantité et quantité assignée.
+  operationId: products
+  security: 
+    - bearerAuth: []
+  responses:
+    '200':
+      description: OK
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              success:
+                type: boolean
+                examples:
+                  - true
+              users:
+                type: array
+                items:
+                  type: object
+                description: La plupart des données demandent simplement le compte, les liens sont ensuite formatés sur le site Kipful directement                                                                                   
+    '500':
+      description: Internal Server Error
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              success:
+                type: boolean
+                examples:
+                  - false
+              message:
+                type: string
+                examples:
+                  - "Nom d'utilisateur inconnu."
+  x-codeSamples:
+    - lang: C#
+      source:
+        $ref: ../code_samples/C_sharp/echo/post.cs
+    - lang: PHP
+      source:
+        $ref: ../code_samples/PHP/echo/post.php

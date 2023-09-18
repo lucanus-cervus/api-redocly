@@ -36,6 +36,8 @@ paths:
     $ref: paths/user.yaml
   /api/v1/users:
     $ref: paths/users.yaml
+  /api/v1/products:
+    $ref: paths/products.yaml
 components:
   securitySchemes:
     main_auth:
