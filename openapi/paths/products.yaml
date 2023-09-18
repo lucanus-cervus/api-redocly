@@ -18,11 +18,39 @@ get:
                 type: boolean
                 examples:
                   - true
-              users:
+              subscription:
+                type: object
+                description: Données relatives aux abonnements.     
+                properties:
+                  product_name:
+                    type: string
+                    examples:
+                      - "Abonnement premium"   
+                  quantity:
+                    type: integer
+                    examples:
+                    - 8
+                  assigned_quantity: 
+                    type: integer
+                    examples:
+                    - 7
+              products:
                 type: array
+                description: Données relatives aux cartes.
                 items:
-                  type: object
-                description: La plupart des données demandent simplement le compte, les liens sont ensuite formatés sur le site Kipful directement                                                                                   
+                  properties:
+                      product_name:
+                    type: string
+                    examples:
+                      - "PVC Sur-mesure Profil-Manager - Blanche"   
+                  quantity:
+                    type: integer
+                    examples:
+                    - 4
+                  assigned_quantity: 
+                    type: integer
+                    examples:
+                    - 2
     '500':
       description: Internal Server Error
       content:

@@ -96,7 +96,7 @@ post:
               access_token:
                 type: string
                 examples:
-                  - 1d57a30b847b707d535e9027e9d9c3ec1366ba94b14eb003fbea95509cc10f3f
+                  - "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c"
               expires_in:
                 type: number
                 examples:
